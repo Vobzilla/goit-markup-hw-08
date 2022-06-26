@@ -1,0 +1,21 @@
+/** @format */
+
+@import "./utils/vars";
+@import "./utils/reset";
+@import "./utils/modern-normalize";
+
+@import "./components/common";
+@import "./components/conteiner";
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/client";
+@import "./layout/filter-portfolio";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./layout/modal";
+
