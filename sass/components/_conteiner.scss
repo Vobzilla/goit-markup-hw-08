@@ -6,15 +6,15 @@
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @include mobile   {
+    width: 448px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+ @include tablet {
+  width: 720px;
+ }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+ @include desktop {
+  width: 1200px;
+ }
 }

@@ -1,25 +1,45 @@
 /** @format */
 
 .client {
-  padding: var(--indent-section) 0;
+  padding: 60px 0;
   text-align: center;
+
+  @include desktop {
+    padding: var(--indent-section) 0;
+  }
 }
 
 .client__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .client__list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+
+  @include desktop {
+    margin-top: 50px;
+  }
 }
 
 .client__item {
-  width: 170px;
   height: 92px;
-  &:not(:last-child) {
-    margin-right: var(--indent-cards);
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
   }
 }
 
