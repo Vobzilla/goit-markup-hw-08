@@ -16,7 +16,7 @@
 
 <body>
   <!--Header-->
-  <!-- <header class="page-header">
+  <header class="page-header">
     <div class="conteiner">
       <nav class="main-nav">
         <a href="./index.html" class="logo link">Web<span class="web-logo">Studio</span> </a>
@@ -34,7 +34,7 @@
             </svg>
             info@devstudio.com</a>
         </li>
-        <li class="item">
+        <li class="auth-nav__item">
           <a href="tel:+380961111111" class="auth-nav__link link">
             <svg class="auth-nav__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
@@ -42,66 +42,115 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="auth-nav__open-btn">
+        <svg class="auth-nav__icon-mob" width="40" height="40">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mob-menu is-hidden">
+      <div class="conteiner__mob-menu conteiner">
+        <button type="button" class="mob-menu__close-btn">
+          <svg class="auth-nav__icon-mob" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list list ">
+          <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link link current">Студия</a></li>
+          <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a></li>
+          <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+        </ul>
+
+        <ul class="mob-connect list">
+          <li class="mob-connect__item">
+            <a href="tel:+380961111111" class="mob-connect__link-tell link">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mob-connect__item">
+            <a href="mailto:info@devstudio.com" class="mob-connect__link link">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mob-soc list">
+          <li class="mob-soc__item">
+            <a href=" " class="mob-soc__link link">Instagram</a>
+          </li>
+
+          <li class="mob-soc__item">
+            <a href=" " class="mob-soc__link link">Twitter</a>
+          </li>
+
+          <li class="mob-soc__item">
+            <a href=" " class="mob-soc__link link">Facebook</a>
+          </li>
+
+          <li class="mob-soc__item">
+            <a href=" " class="mob-soc__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
-  <main> -->
-  <!--Hero-->
+  <main>
+    <!--Hero-->
 
-  <section class="section hero">
-    <div class="conteiner">
-      <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-      <button class="button__hero" type="button" data-modal-open>Заказать услугу</button>
-    </div>
-  </section>
+    <section class="section hero">
+      <div class="conteiner">
+        <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+        <button class="button__hero" type="button" data-modal-open>Заказать услугу</button>
+      </div>
+    </section>
 
-  <!--Feature-->
-  <section class="feature section">
-    <div class="conteiner">
-      <ul class="feature_list list">
-        <li class="feature__item">
-          <div class="feature__wrap">
-            <svg class="feature__icon">
-              <use href="./images/icons.svg#icon-antenna"> </use>
-            </svg>
-          </div>
-          <h3 class="feature__title">Внимание к деталям</h3>
-          <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
-          </p>
-        </li>
-        <li class="feature__item">
-          <div class="feature__wrap">
-            <svg class="feature__icon">
-              <use href="./images/icons.svg#icon-clock"> </use>
-          </div>
-          <h3 class="feature__title">Пунктуальность</h3>
-          <p class="feature__text">
-            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-          </p>
-        </li>
-        <li class="feature__item">
-          <div class="feature__wrap">
-            <svg class="feature__icon">
-              <use href="./images/icons.svg#icon-diagram"> </use>
-          </div>
-          <h3 class="feature__title">Планирование</h3>
-          <p class="feature__text">
-            Равным образом консультация с широким активом в значительной степени обуславливает.
-          </p>
-        </li>
-        <li class="feature__item">
-          <div class="feature__wrap">
-            <svg class="feature__icon">
-              <use href="./images/icons.svg#icon-astronaut"> </use>
-          </div>
-          <h3 class="feature__title">Современные технологии</h3>
-          <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <!--Feature-->
+    <section class="feature section">
+      <div class="conteiner">
+        <ul class="feature_list list">
+          <li class="feature__item">
+            <div class="feature__wrap">
+              <svg class="feature__icon">
+                <use href="./images/icons.svg#icon-antenna"> </use>
+              </svg>
+            </div>
+            <h3 class="feature__title">Внимание к деталям</h3>
+            <p class="feature__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__wrap">
+              <svg class="feature__icon">
+                <use href="./images/icons.svg#icon-clock"> </use>
+            </div>
+            <h3 class="feature__title">Пунктуальность</h3>
+            <p class="feature__text">
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__wrap">
+              <svg class="feature__icon">
+                <use href="./images/icons.svg#icon-diagram"> </use>
+            </div>
+            <h3 class="feature__title">Планирование</h3>
+            <p class="feature__text">
+              Равным образом консультация с широким активом в значительной степени обуславливает.
+            </p>
+          </li>
+          <li class="feature__item">
+            <div class="feature__wrap">
+              <svg class="feature__icon">
+                <use href="./images/icons.svg#icon-astronaut"> </use>
+            </div>
+            <h3 class="feature__title">Современные технологии</h3>
+            <p class="feature__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <!--Work box-->
-  <section class="work section">
+    <!--Work box-->
+    <section class="work section">
       <div class="conteiner">
         <h2 class="work__title title">Чем мы занимаемся</h2>
         <ul class="work__list list">
@@ -125,8 +174,8 @@
         </ul>
       </div>
     </section>
-  <!--team -->
-  <section class="section team">
+    <!--team -->
+    <section class="section team">
       <div class="conteiner">
         <h2 class="team__title title">Наша команда</h2>
         <ul class="team__list list">
@@ -340,53 +389,55 @@
   <!--footer-->
   <footer class="footer">
     <div class="conteiner footer">
-      <div class="footer-content">
-        <a href="./index.html" class="logo link">Web<span class="web-logo web-logo--light">Studio</span> </a>
-        <address class="footer-address">
-          <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@example.com" class="footer__contact link">info@example.com</a>
-          <a href="tel:+380991111111" class="footer__contact link">+38 099 111 11 11</a>
-        </address>
-      </div>
-      <div class="fotter-wrapper">
-        <p class="fotter-wrapper__text">присоединяйтесь</p>
-        <ul class="footer-social list">
-          <li class="footer-social__item">
-            <a class="footer-social__link link" href="">
-              <svg class="footer-social__icon">
-                <use href="./images/icons.svg#icon-instagram">
-                </use>
-              </svg>
-            </a>
-          </li>
+      <div class="wrap-tablet">
+        <div class="footer-content">
+          <a href="./index.html" class="logo link">Web<span class="web-logo web-logo--light">Studio</span> </a>
+          <address class="footer_address">
+            <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@example.com" class="footer__contact link">info@example.com</a>
+            <a href="tel:+380991111111" class="footer__contact link">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div class="fotter-wrapper">
+          <p class="fotter-wrapper__text">присоединяйтесь</p>
+          <ul class="footer-social list">
+            <li class="footer-social__item">
+              <a class="footer-social__link link" href="">
+                <svg class="footer-social__icon">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link link" href="">
-              <svg class="footer-social__icon">
-                <use href="./images/icons.svg#icon-twitter">
-                </use>
-              </svg>
-            </a>
-          </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link link" href="">
+                <svg class="footer-social__icon">
+                  <use href="./images/icons.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link link" href="">
-              <svg class="footer-social__icon">
-                <use href="./images/icons.svg#icon-facebook">
-                </use>
-              </svg>
-            </a>
-          </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link link" href="">
+                <svg class="footer-social__icon">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link link" href="">
-              <svg class="footer-social__icon">
-                <use href="./images/icons.svg#icon-linkedin">
-                </use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+            <li class="footer-social__item">
+              <a class="footer-social__link link" href="">
+                <svg class="footer-social__icon">
+                  <use href="./images/icons.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-field">
@@ -404,7 +455,7 @@
     </div>
   </footer>
 
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__close-btn" data-modal-close>
         <svg class="modal__close-icon">
@@ -467,7 +518,8 @@
   </form>
   </div>
   </div>
-  <script src="./js/modal.js"></script> -->
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
