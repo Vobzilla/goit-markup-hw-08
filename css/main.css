@@ -506,6 +506,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--accent-color);
+}
 
 .mob-connect {
   margin-top: auto;
@@ -537,8 +540,9 @@ body {
 }
 
 .mob-soc__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mob-soc__link {
@@ -918,16 +922,14 @@ body {
 
 /** @format */
 .section-portfolio {
-  padding: var(--indent-section) 0;
+  padding: 60px 0;
 }
 
 .filter__list {
   display: flex;
-  justify-content: center;
-}
-
-.filter__list-item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 8px;
 }
 
 .filter__button {
@@ -953,18 +955,8 @@ body {
 }
 
 /** @format */
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-right: calc(-1 * var(--indent-cards));
-  margin-bottom: calc(-1 * var(--indent-cards));
-}
-
-.project__item {
-  flex-basis: calc(33.3333333333% - var(--indent-cards));
-  margin-right: var(--indent-cards);
-  margin-bottom: var(--indent-cards);
+.project__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .project__link:hover .project-wrap__text,
@@ -982,11 +974,11 @@ body {
   top: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.56;
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1280,6 +1272,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 15px 94px;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1289,8 +1282,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  height: 100%;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1324,7 +1317,7 @@ body {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
   color: var(--title-text-color);
@@ -1401,7 +1394,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.17;
 }
 
 .modal-field__check-link {
