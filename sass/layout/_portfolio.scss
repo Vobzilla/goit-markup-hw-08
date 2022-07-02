@@ -1,21 +1,30 @@
 /** @format */
 
-// .project {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-top: 50px;
+.project {
 
-//   margin-right: calc(-1 * var(--indent-cards));
-//   margin-bottom: calc(-1 * var(--indent-cards));
-// }
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    margin-right: calc(-1 * var(--indent-cards));
+    margin-bottom: calc(-1 * var(--indent-cards));
+  }
+}
 
 .project__item {
-  // flex-basis: calc(100% / 3 - var(--indent-cards));
-  // margin-right: var(--indent-cards);
-  // margin-bottom: var(--indent-cards);
-  
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @include tablet {
+    flex-basis: calc(100% / 2 - var(--indent-cards));
+    margin-right: var(--indent-cards);
+    margin-bottom: var(--indent-cards);
+  }
+
+  @include desktop {
+     flex-basis: calc(100% / 3 - var(--indent-cards));
   }
 }
 
@@ -47,7 +56,7 @@
 }
 
 .card-text {
-  padding: 20px 24px; 
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 

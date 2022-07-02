@@ -1,16 +1,27 @@
 /** @format */
 
 .section-portfolio {
-  // padding: var(--indent-section) 0;
   padding: 60px 0;
+
+  @include desktop {
+    padding: var(--indent-section) 0;
+  }
 }
 
 .filter__list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 40px;
   gap: 8px;
+
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {

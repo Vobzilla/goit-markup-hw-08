@@ -5,9 +5,7 @@
   background-color: var(--accent-bgc);
 }
 
-.conteiner.footer {
-  padding: 0;
-
+.footer-page {
   @include desktop {
     display: flex;
     align-items: baseline;
@@ -27,7 +25,7 @@
     justify-content: center;
   }
 
-    @include desktop {
+  @include desktop {
     justify-content: flex-start;
     text-align: left;
   }
@@ -38,13 +36,16 @@
     display: flex;
     justify-content: space-between;
   }
-  
+
+  @include desktop {
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 .web-logo--light {
   color: var(--white-color);
 }
-
 
 .footer__text {
   display: inline-block;
@@ -96,6 +97,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .footer-social {
@@ -154,6 +159,7 @@
     height: 86px;
     margin-left: auto;
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -179,7 +185,6 @@
 
 .footer-field__input {
   width: 100%;
-
   padding-left: 16px;
   min-height: 50px;
   color: #ffffff;
@@ -210,8 +215,8 @@
   margin-right: auto;
 
   @include desktop {
- margin-left: 12px;
- margin-top: 0;
+    margin-left: 12px;
+    margin-top: 0;
   }
 }
 
@@ -233,8 +238,8 @@
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include desktop {
-  min-width: 200px;
-  min-height: 50px;
+    min-width: 200px;
+    min-height: 50px;
   }
 
   &:hover,
