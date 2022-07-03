@@ -2,10 +2,8 @@
 
 .work {
   padding-bottom: var(--indent-section);
-
-  @include mobile {
     display: none;
-  }
+  
 
   @include desktop {
     display: block;

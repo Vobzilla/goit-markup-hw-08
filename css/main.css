@@ -770,11 +770,7 @@ body {
 /** @format */
 .work {
   padding-bottom: var(--indent-section);
-}
-@media screen and (min-width: 480px) {
-  .work {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .work {
