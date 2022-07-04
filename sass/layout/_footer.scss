@@ -34,7 +34,7 @@
 .wrap-tablet {
   @include tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @include desktop {

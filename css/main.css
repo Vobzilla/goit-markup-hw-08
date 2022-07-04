@@ -1068,7 +1068,6 @@ body {
   .project {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
     margin-right: calc(-1 * var(--indent-cards));
     margin-bottom: calc(-1 * var(--indent-cards));
   }
@@ -1113,10 +1112,25 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .project-wrap__text {
+    padding: 63px 24px;
+  }
+}
 
 .card-text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .card-text.card-text--first {
+    padding: 20px 24px 56px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-text.card-text--first {
+    padding: 20px 24px;
+  }
 }
 
 .card-text__title {
@@ -1181,7 +1195,7 @@ body {
 @media screen and (min-width: 768px) {
   .wrap-tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
